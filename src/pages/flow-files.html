@@ -1,0 +1,250 @@
+---
+layout: auth
+---
+<section class="welcome h-screen">
+    
+    <div class="flow-top">
+        <div class="flow-top__bg"></div>
+
+        <div class="d-flex justify-content-between spacing-5">
+
+            <div class="w-100">
+                <div class="progress w-100 spacing-4">
+                    <div class="progress__body">
+                        <div class="progress__fill">
+
+                        </div>
+                    </div>
+                    <div class="progress__text">
+                        Шаг <span>2</span> из <span>4</span>
+                    </div>
+                </div>
+
+                <div class="size24 font-medium lh11">Почти готово!</div>
+                
+            </div>
+            <div class="">
+                <img src="../assets/img/finger-two.png" width="110px" alt="">
+            </div>
+        </div>
+
+        <div class="flow-top__text color-white opacity-7 spacing-5">
+            Для завершения проверки нам понадобятся фотографии паспорта и ПТС. Это поможет нам удостовериться, что все в порядке, и ускорит процесс одобрения займа.
+        </div>
+
+        <div class="green-gradient w-100 spacing-4">
+            <img class="icon" src="../assets/img/shield.svg" alt="">
+            <span class="">Ваши фото не попадут третьим лицам</span>
+        </div>
+
+    </div>
+
+    <div class="auth-form">
+
+        <div class="exclamation">
+            <img src="../assets/img/Exclamation.png" alt="">
+            <span>Убедитесь, что все фото четкие и данные легкочитаемы</span>
+        </div>
+
+        <div class="size24 font-medium lh11 ls08 mt-16">
+            Паспорт РФ
+            <div class="color-dark-700 text25 mt-8">Добавьте фото паспорта, чтобы мы могли подтвердить вашу личность</div>
+        </div>
+        
+
+        <div class="files-form">
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Основной разворот
+
+                            <i class="file-status"><img src="../assets/img/file-status-error.svg" alt=""></i>
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+
+                <!-- ЗАгруженный файл с возможностью удалить его -->
+                <div class="loaded-file">
+                    <div class="file-image">
+                        <img src="../assets/img/passport-example.png" alt="">
+                    </div>
+                    
+                    <div class="delete-file">
+                        <img src="../assets/img/trash.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="exclamation exclamation-red mt-16">
+                    <img src="../assets/img/Exclamation-error.svg" alt="">
+                    <span>Данные на фотографии нечитаемы. Пожалуйста, добавьте фотографию повторно.</span>
+                </div>
+
+            </div>
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Прописка
+
+                            <i class="file-status"><img src="../assets/img/file-status-success.svg" alt=""></i>
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="loaded-file">
+                    <div class="file-image">
+                        <img src="../assets/img/passport-example.png" alt="">
+                    </div>
+                    
+                    <div class="delete-file">
+                        <img src="../assets/img/trash.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Селфи с паспортом
+                            <i class="file-status"><img src="../assets/img/file-status-error.svg" alt=""></i>
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+                <div class="exclamation exclamation-red mt-16">
+                    <img src="../assets/img/Exclamation-error.svg" alt="">
+                    <span>Необходимо прикрепить все фотографии, чтобы перейти к следующему шагу</span>
+                </div>
+            </div>
+        </div>
+
+         <div class="size24 font-medium lh11 ls08 mt-16">
+            Документы ТС
+            <div class="color-dark-700 text25 mt-8">Добавьте фото документов ТС, чтобы мы могли удостовериться, что это ТС Ваше</div>
+        </div>
+        
+
+        <div class="files-form">
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Основной разворот ПТС
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Оборот ПТС
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Лицевая сторона СТС
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="files-form__item">
+                <div class="files-form__head">
+                    <div class="">
+                        <div class="file-name">
+                            Оборот СТС
+                        </div>
+                        <div class="link-purple js-photo-example">Пример фото</div>
+                    </div>
+
+                    <label class="file-input">
+                        <input type="file" accept="image/*; capture=camera" >
+                        <div class="">
+                            <img src="../assets/img/file-input.svg" alt="">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-buttons">
+            <a href="flow-files.html" class="button button-fourthary button--sm w-100 spacing-4 mt-16">Назад</a>
+            <a href="flow-files.html" class="button button-primary button--sm w-100 spacing-4 mt-16">Далее</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="photo-example-modal">
+    <div class="popup">
+        <div class="popup-close">
+            <img src="../assets/img/x.png" alt="">
+        </div>
+        <div class="popup-title">
+            Селфи с паспортом
+        </div>
+        <div class="photo-example">
+            <img src="../assets/img/selfie-example.png" width="100%" alt="">
+        </div>
+        <div class="exclamation">
+            <img src="../assets/img/Exclamation.png" alt="">
+            <span>Убедитесь, что все фото четкие и данные легкочитаемы</span>
+        </div>
+        <a href="flow-files.html" class="button button-primary button--sm w-100 spacing-4 mt-16">Понятно</a>
+    </div>
+</div>
+

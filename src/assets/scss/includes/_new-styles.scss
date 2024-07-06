@@ -1,0 +1,456 @@
+// New styles
+
+// общие
+.h-screen {
+    height: 100%;
+    min-height: 100vh;
+}
+.w-screen {
+    width: 100%;
+    min-width: 100vw;
+}
+
+.pt-64 {
+    padding-top: 64px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.opacity-7 {
+    opacity: .7;
+}
+
+
+.green-gradient {
+    height: 38px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    background: linear-gradient(83.09deg, rgb(149, 255, 132) 0.477%,rgb(105, 234, 157) 99.322%),rgb(217, 217, 217); 
+    color: #0A2915;
+    font-size: 15px;
+    gap: 4px;
+
+    .icon {
+        opacity: .4;
+        margin-bottom: 4px;
+    }
+}
+
+
+// qr.html
+.qr-block {
+    width: 100%;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    box-shadow: 1.6px 1.6px 3.2px 0px rgba(0, 0, 0, 0.04);
+    border: 0.8px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6.4px;
+    overflow: hidden;
+}
+
+.qr-text {
+    width: 100%;
+    max-width: 448px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+// flow-start.html
+.start-banner {
+    background-color: $purple;
+    margin-top: 16px;
+    border-radius: 40px;
+    padding: 40px 16px;
+
+    .button {
+        background-color: #50187B;
+        font-weight: 500;
+    }
+    margin-bottom: 48px;
+}
+
+
+// flow-personal
+.flow-top {
+    position: relative;
+    margin-top: 16px;
+    padding: 0 16px;
+    color: $white;
+
+    &>* {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 22px;
+        left: 0;
+        border-radius: 24px;
+        background-color: $purple;
+        z-index: 0;
+    }
+
+    .progress {
+        margin-top: 40px;
+        padding-right: 11px;
+
+        &__body {
+            background-color: #50187B;
+            height: 4px;
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        &__fill {
+            height: 100%;
+            background-color: #69EAD6;
+            border-radius: 24px;
+            width: 20%;
+        }
+        &__text {
+            text-transform: uppercase;
+            color: $white;
+            opacity: .7;
+        }
+    }
+
+    &__text {
+        max-width: 90%;
+        font-size: 15px;
+    }
+}
+
+.auth-form {
+    background-color: $white;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+    padding: 24px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .form-field {
+        &__wrapper {
+            flex-basis: 100%;
+            margin-bottom: 0;
+
+            input:not(.js-tel) {
+                padding: 18px 10px;
+                height: 58px;
+            }
+        }
+    }
+    .basis-50 {
+        flex-basis: calc(50% - 8px);
+    }
+    .basis-60 {
+        flex-basis: calc(62% - 16px);
+    }
+    .basis-35 {
+        flex-basis: 35%;
+    }
+    .form-date {
+        position: relative;
+
+        .calendar-icon {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+    }
+    .form-gender {
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            margin-right: 30px;
+        }
+    }
+
+    .auto-number {
+        flex-basis: 65%;
+        input {
+            border-radius: 8px 0 0 8px;
+        }
+    }
+    .auto-region {
+        flex-basis: 35%;
+        margin-left: -16px;
+        border-left: 1px solid $gray-300;
+        position: relative;
+        
+        input {
+            border-radius: 0 8px 8px 0;
+        }
+        .flag {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+
+            &__img {
+                width: 21px;
+                height: 15px;
+            }
+            &__text {
+                height: 15px;
+                color: $gray-700
+            }
+
+        }
+    }
+}
+
+
+// flow-files.html 
+
+.exclamation {
+    display: flex;
+    background-color: rgba(55, 111, 255, 0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    width: 100%;
+    
+    span {
+        max-width: 230px;
+        color: rgb(80, 114, 155);
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    &-red {
+        align-items: flex-start;
+        background-color: rgba(154, 39, 59, 0.08);
+        border-radius: 4px;
+
+        span {
+            color: rgb(154, 39, 59);
+            max-width: 100%;
+        }
+    }
+    &-small {
+        align-items: flex-start;
+        span {
+            font-size: 11.5px;
+        }
+    }
+}
+
+
+.files-form {
+    background-color: $gray-100;
+    padding: 16px;
+    border-radius: 16px;
+    width: 100%;
+
+		&__item {
+            &:not(:first-child) {
+                margin-top: 16px;
+                border-top: 1px solid #EAEAEC;
+                padding-top: 16px;
+            }
+        }
+
+		&__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .file-input {
+                cursor: pointer;
+            }
+            .link-purple {
+                cursor: pointer;
+            }
+            .file-name {
+                font-size: 17px;
+
+            }
+		}
+}
+
+.file-input {
+
+    input {
+        display: none;    
+    }
+}
+
+.photo-example-modal {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40, 43, 64, .4);
+    z-index: 1000;
+    transition: all 0.5s ease;
+    pointer-events: none;
+
+    .popup {
+        transform: translateY(100vh);
+        transition: all 0.5s ease;
+        background-color: $white;
+        border-radius: 24px 24px 0px 0px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 16px;
+    }
+
+    &.active {
+        opacity:1;
+        pointer-events: all;
+
+        .popup {
+            transform: translateY(0);
+        }
+    }
+    .popup-close {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            cursor: pointer;
+        }
+    }
+    .popup-title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .photo-example {
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+    }
+}
+
+.loaded-file {
+    width: 44px;
+    height: 44px;
+    position: relative;
+
+    .file-image {
+        width: 100%;
+        height: 100%;
+        
+        overflow: hidden;
+        border-radius: 8px;
+        margin-top: 4px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .delete-file {
+        background-color: $white;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -2px;
+        right: -4px;
+        box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.04);
+    }
+}
+
+.form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+    .button:not(.end-button) {
+        max-width: fit-content;
+    }
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    
+    .radio-button {
+        background-color: rgb(242, 242, 242);
+        width: 50%;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        color: rgb(106, 107, 120);
+        cursor: pointer;
+        
+    }
+    input {
+        display: none;
+
+        &:checked + .radio-button {
+            color: $purple;
+            background-color: rgba(115, 45, 169, 0.08);
+            border: 1.5px solid $purple;
+        }
+    }
+
+}
+
+.add-file {
+    width: fit-content;
+    padding: 12px 24px;
+    background-color: rgba(115, 45, 169, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    span {
+        height: 16px;
+        color: $purple;
+    }
+}
+
+
+// End of new styles
