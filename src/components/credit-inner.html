@@ -1,5 +1,5 @@
-<div class="size24 font-medium ls08 lh12 spacing-35">Заявка на займ</div>
-<div class="text font-medium ls08 lh12 spacing-4">1. Параметры займа</div>
+<div class="size24 font-medium lh12 spacing-35">Заявка на займ</div>
+<div class="text font-medium lh12 spacing-4">1. Параметры займа</div>
 
 <div class="profile-calc-range">
 
@@ -8,38 +8,7 @@
 </div>
 
 
-<div class="color-dark-600 mb-2 mb-lg-3">
-    <span>Тип платежей</span>
-    <svg class="tooltip-link" aria-describedby="tooltip-type" width="20" height="20">
-        <use xlink:href="#info"></use>
-    </svg>
-    <div id="tooltip-type" class="mdc-tooltip mdc-tooltip-1" aria-hidden="true" tabindex="-1" role="dialog">
-        <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">
-            Определение аннитетных и простых платежей.
-        </div>
-    </div>
-</div>
 
-<div class="d-flex align-items-start gap-24 flex-md-row align-items-md-center spacing-35">
-    <label class="common-radio w-auto">
-        <input type="radio" name="payment-type" checked>
-        <span class="common-radio__in">
-            <span class="common-radio__check"></span>
-            <span class="common-radio__text">
-                <span class="font-regular">Простые</span>
-            </span>
-        </span>
-    </label>
-    <label class="common-radio w-auto">
-        <input type="radio" name="payment-type">
-        <span class="common-radio__in">
-            <span class="common-radio__check"></span>
-            <span class="common-radio__text">
-                <span class="font-regular">Аннуитетные</span>
-            </span>
-        </span>
-    </label>
-</div>
 
 <div class="spacing-3 tac align-items-center credit-price__wrapper">
     <div class="credit-price">
@@ -49,7 +18,7 @@
 </div>
 
 
-<div class="text font-medium ls08 lh12 spacing-4">2. Способ получения денег</div>
+<div class="text font-medium lh12 spacing-4">2. Способ получения денег</div>
 
 <div class="credit-payment mb-2">
     <input id="credit-payment-1" type="radio" name="credit-payment" value="1">
@@ -59,9 +28,52 @@
             <span>
                 <span class="font-medium mb-1">Банковская карта</span>
                 <span class="text5 color-dark-700">Мир, Visa,  Mastercard</span>
-                <img src="{{root}}assets/img/payment-systems.png" alt="">
+                <img src="{{root}}assets/img/payment-systems.png" width="128px" alt="">
             </span>
         </label>
+
+        <div class="credit-payment__wrapper">
+            <div class="credit-payment__info">
+                <div class="color-dark-700 mb-2">Выберите карту:</div>
+                <div class="credit-payment__banks">
+                    <div class="credit-payment__banks-list">
+                        <label class="common-radio">
+                            <input type="radio" name="card">
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span>
+                                    <span class="common-radio__text">
+                                        <span>**** **** **** **22</span>
+                                        <img src="{{root}}assets/img/mir.svg" width="43px" alt="">
+                                    </span>
+                                    <span class="color-dark-700 text5 w-100">Действительна до: 12/25</span>
+                                </span>
+                            </span>
+                        </label>
+                        <label class="common-radio">
+                            <input type="radio" name="card">
+                            <span class="common-radio__in">
+                                <span class="common-radio__check"></span>
+                                <span>
+                                    <span class="common-radio__text">
+                                        <span>**** **** **** **22</span>
+                                        <img src="{{root}}assets/img/visa-logo.svg" width="36px" alt="">
+                                    </span>
+                                    <span class="color-dark-700 text5 w-100">Действительна до: 12/25</span>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                 <div class="add-file font-medium w-100 py-16">
+                    <img src="{{root}}assets/img/add-card.svg" alt="">
+                    <span class="text4">Добавить карту</span>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 
@@ -78,10 +90,13 @@
                 <use xlink:href="#card-5"></use>
             </svg>
         </label>
-        <div class="exclamation exclamation-small mt-16">
-            <img src="{{root}}assets/img/Exclamation-small.png" alt="">
-            <span class="text5">Номер телефона СБП должен совпадать с номером регистрации пользователя</span>
+        
+        
+        <div class="sbp-modal-open green-gradient w-100 mt-16">
+            <img class="icon" src="{{root}}assets/img/question.svg" alt="">
+            <span class="font-medium">Получу ли я деньги через СБП?</span>
         </div>
+
         <div class="credit-payment__wrapper">
             <div class="credit-payment__info">
                 <div class="color-dark-700 mb-2">Выберите банк:</div>
@@ -94,7 +109,7 @@
                 <div class="credit-payment__banks">
                     <div class="credit-payment__banks-list">
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -104,7 +119,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -114,7 +129,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -124,7 +139,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -134,7 +149,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio" checked>
+                            <input type="radio" name="bank" checked>
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -144,7 +159,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -154,7 +169,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">
@@ -164,7 +179,7 @@
                             </span>
                         </label>
                         <label class="common-radio">
-                            <input type="radio">
+                            <input type="radio" name="bank">
                             <span class="common-radio__in">
                                 <span class="common-radio__check"></span>
                                 <span class="common-radio__text">

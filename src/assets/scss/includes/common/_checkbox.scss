@@ -129,8 +129,11 @@
       padding: 12px 16px;
     }
     @include r($breakpoint-35) {
-      font-size: 12px;
-      padding: 8px 18px;
+      font-size: 14px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &:hover {
