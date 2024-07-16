@@ -75,8 +75,7 @@ input[type="number"] {
     }
 
     &:focus + .form-field__label,
-    &:not(:placeholder-shown) + label,
-    {
+    &:not(:placeholder-shown) + label {
       top: 18px;
       @include text6;
 
@@ -214,7 +213,7 @@ input[type="number"] {
     .form-field {
       &__input,
       &__textarea {
-        @include font-medium;
+        @include font-regular;
         box-shadow: none;
         background-color: #F2F1F0;
       }

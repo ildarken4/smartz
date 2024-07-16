@@ -61,6 +61,7 @@ header {
     color: rgba(10, 41, 21, .7);
     font-size: 15px;
     gap: 6px;
+    line-height: 13px;
     --smooth-corners: 20;
     mask-image: paint(smooth-corners);
     -webkit-mask-image: paint(smooth-corners);
@@ -235,13 +236,13 @@ section .auth-form {
     }
 
     .auto-number {
-        flex-basis: 65%;
+        flex-basis: 62%;
         input {
             border-radius: 8px 0 0 8px;
         }
     }
     .auto-region {
-        flex-basis: 35%;
+        flex-basis: 38%;
         margin-left: -16px;
         border-left: 1px solid $gray-300;
         position: relative;
@@ -493,9 +494,13 @@ section .auth-form {
     line-height: 16px;
     cursor: pointer;
 
+    img {
+        opacity: .7;
+    }
+
     span {
         height: 16px;
-        color: $purple;
+        color: #732DA9;
     }
 }
 
