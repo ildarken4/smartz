@@ -1,5 +1,6 @@
 // New styles
 
+
 // общие
 
 header {
@@ -14,7 +15,9 @@ header {
     width: 100%;
     min-width: 100vw;
 }
-
+.w-fit {
+    width: fit-content !important;
+}
 .pt-64 {
     padding-top: 64px;
 }
@@ -31,6 +34,10 @@ header {
 .py-16 {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
+}
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 .mt-16 {
     margin-top: 16px;
@@ -292,6 +299,12 @@ section .auth-form {
         color: rgb(80, 114, 155);
         font-size: 15px;
         line-height: 20px;
+
+        a {
+            display: block;
+            color: rgb(80, 114, 155);
+            font-size: 18px;
+        }
     }
 
     &-red {
@@ -310,6 +323,10 @@ section .auth-form {
             font-size: 11.5px;
         }
     }
+    &.px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
 }
 
 
